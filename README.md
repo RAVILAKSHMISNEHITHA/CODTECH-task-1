@@ -1,6 +1,1 @@
-**Name:** RAVI LAKSHMI SNEHITHA
-**Company:** CODTECH IT SOLUTIONS
-**ID:** CT4MLOU
-**Domain:** IOT
-**Duration:** JANUARY TO MAY
-**Mentor:** NEELA SANTHOSH KUMAR
+
