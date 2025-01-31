@@ -1,0 +1,42 @@
+#include <Arduino.h>
+#include <Wire.h>
+#include <SoftwareSerial.h>
+
+SoftwareSerial Bluetooth(10, 11);
+char Data;
+
+void setup() {
+  Bluetooth.begin(38400);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+}
+
+void updateLED(int pin, bool state) {
+  digitalWrite(pin, state ? HIGH : LOW);
+}
+
+void loop() {
+  if (Bluetooth.available()) {
+    Data = Bluetooth.read();
+
+    switch (Data) {
+      case '5': updateLED(5, true); break;  // LED 1 on
+      case '1': updateLED(5, false); break; // LED 1 off
+      case '6': updateLED(6, true); break;  // LED 2 on
+      case '2': updateLED(6, false); break; // LED 2 off
+      case '7': updateLED(7, true); break;  // LED 3 on
+      case '3': updateLED(7, false); break; // LED 3 off
+      case '9': 
+        updateLED(5, true); 
+        updateLED(6, true); 
+        updateLED(7, true); 
+        break; // All LEDs on
+      case '0': 
+        updateLED(5, false); 
+        updateLED(6, false); 
+        updateLED(7, false); 
+        break; // All LEDs off
+    }
+  }
+}
