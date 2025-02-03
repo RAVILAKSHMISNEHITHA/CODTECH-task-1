@@ -1,7 +1,11 @@
 **Name:** RAVI LAKSHMI SNEHITHA
+
 **Company:** CODTECH IT SOLUTIONS
+
 **Domain:** IOT
+
 **Duration:** JANUARY to MAY 2025
+
 **Mentor:** NEELA SANTOSH KUMAR
 
 
