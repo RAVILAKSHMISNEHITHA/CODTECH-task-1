@@ -41,7 +41,8 @@ To design a smart light control system using an Arduino and a mobile app, enabli
 - **Bluetooth Terminal App**: Mobile app for sending commands to the Arduino.
 
 ### Key Insights:
-- **Effective Communication**: Ensuring reliable Bluetooth communication between the Arduino and the mobile app is crucial for the system's functionality.
+- **Effective Communication**: Ensuring reliable Bluetooth communication between the Arduino and the mobile app is crucial for the system's 
+                               functionality.
 - **Code Modularity**: Writing modular code with functions for different commands improves readability and maintainability.
 - **User-Friendly Interface**: Using a simple mobile app interface makes it easy for users to control the LEDs.
 - **Debugging Tools**: Utilizing the Serial Monitor helps in identifying and resolving issues during development.
